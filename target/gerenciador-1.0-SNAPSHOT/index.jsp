@@ -9,5 +9,10 @@
 </h1>
 <br/>
 <a href="oi">Está vivo?</a>
+<br>
+<a href="novaempresa">Cadastro de Empresa via parâmetro URL</a>
+<br>
+<a href="formNovaEmpresa.jsp">Cadastro de Empresa via Formulário</a>
+
 </body>
 </html>
