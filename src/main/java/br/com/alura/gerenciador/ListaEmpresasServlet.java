@@ -17,16 +17,9 @@ public class ListaEmpresasServlet extends HttpServlet {
         DBMemoria dbMemoria = new DBMemoria();
         List<Empresa> lista = dbMemoria.getEmpresas();
 
-        PrintWriter out = response.getWriter();
-
-        out.println("<html><body>");
-        out.println("<ul>");
-        for (Empresa empresa : lista) {
-            out.println("<li>" + empresa.getNome() + "</li>");
-        }
-        out.println("</ul>");
-        out.println("<a href= \"index.jsp\">voltar</a>");
-        out.println("</body></html>");
+        request.setAttribute("empresas", lista);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/listaEmpresas.jsp");
+        dispatcher.forward(request, response);
     }
 
 }
