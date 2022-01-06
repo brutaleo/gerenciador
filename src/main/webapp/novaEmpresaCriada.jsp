@@ -7,14 +7,12 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 
-<% String nomeEmpresa = (String) request.getAttribute("empresa");%>
-
 <html>
 <head>
     <title>Nova Empresa Criada</title>
 </head>
 <body>
-<h1>Empresa <%=nomeEmpresa%> cadastrada com sucesso!</h1>
+<h1>Empresa ${ empresa } cadastrada com sucesso!</h1>
 <a href="formNovaEmpresa.jsp">Cadastrar nova</a>
 <br>
 <a href="listaempresas">Listar Empresas cadastradas</a>
