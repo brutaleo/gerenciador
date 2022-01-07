@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: bruta
@@ -12,7 +13,14 @@
     <title>Nova Empresa Criada</title>
 </head>
 <body>
-<h1>Empresa ${ empresa } cadastrada com sucesso!</h1>
+<c:if test="${not empty empresa}">
+    <h1>Empresa ${ empresa } cadastrada com sucesso!</h1>
+</c:if>
+
+<c:if test="${empty empresa}">
+    <h1>Nenhuma Empresa cadastrada!</h1>
+</c:if>
+
 <a href="formNovaEmpresa.jsp">Cadastrar nova</a>
 <br>
 <a href="listaempresas">Listar Empresas cadastradas</a>
