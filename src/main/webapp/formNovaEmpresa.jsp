@@ -17,6 +17,9 @@
     <label> Nome:
         <input type="text" name="nome">
     </label>
+    <label> Data de Abertura:
+        <input type="text" name="data" placeholder="Formato dd/mm/aaaa">
+    </label>
     <input type="submit">
 </form>
 <a href="index.jsp">voltar</a>

@@ -6,7 +6,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
+
+
 <html>
 <head>
     <title>Lista de Empresas</title>
@@ -16,7 +19,7 @@
 <br>
 <ul>
     <c:forEach items="${empresas}" var="empresa">
-        <li>${empresa.nome}</li>
+        <li>${empresa.nome} - data de abertura: <fmt:formatDate value="${empresa.dataAbertura}" pattern="dd/MM/yyyy"/></li>
     </c:forEach>
 </ul>
 <br>

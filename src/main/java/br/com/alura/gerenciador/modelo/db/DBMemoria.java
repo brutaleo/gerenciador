@@ -3,6 +3,7 @@ package br.com.alura.gerenciador.modelo.db;
 import br.com.alura.gerenciador.modelo.Empresa;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class DBMemoria {
@@ -10,8 +11,8 @@ public class DBMemoria {
     private static List<Empresa> lista = new ArrayList<>();
 
     static {
-        Empresa xpto_sa = new Empresa("XPTO S/A");
-        Empresa xpto_ltda = new Empresa("XPTO Ltda");
+        Empresa xpto_sa = new Empresa("XPTO S/A", new Date());
+        Empresa xpto_ltda = new Empresa("XPTO Ltda", new Date());
 
         lista.add(xpto_sa);
         lista.add(xpto_ltda);
