@@ -35,7 +35,7 @@ public class NovaEmpresaServlet extends HttpServlet {
         DBMemoria dbMemoria = new DBMemoria();
         dbMemoria.adiciona(empresa);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/novaEmpresaCriada.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/listaEmpresas");
         request.setAttribute("empresa", empresa.getNome());
         dispatcher.forward(request, response);
 

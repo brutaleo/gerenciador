@@ -12,10 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "ListaEmpresasServlet", value = "/listaempresas")
+@WebServlet(name = "ListaEmpresasServlet", value = "/listaEmpresas")
 public class ListaEmpresasServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         DBMemoria dbMemoria = new DBMemoria();
         List<Empresa> lista = dbMemoria.getEmpresas();
 
