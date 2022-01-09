@@ -14,7 +14,7 @@
 <br>
 <a href="formNovaEmpresa.jsp">Cadastro de Empresa via Formulário</a>
 <br>
-<a href="listaempresas">Listar Empresas salvas em memória</a>
+<a href="listaEmpresas">Listar Empresas salvas em memória</a>
 
 </body>
 </html>

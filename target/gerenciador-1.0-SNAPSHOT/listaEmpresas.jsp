@@ -15,11 +15,16 @@
     <title>Lista de Empresas</title>
 </head>
 <body>
+<c:if test="${not empty empresa}">
+    <h1>Empresa ${ empresa } cadastrada com sucesso!</h1><br>
+</c:if>
+
 <h1>Lista de Empresas:</h1>
 <br>
 <ul>
     <c:forEach items="${empresas}" var="empresa">
-        <li>${empresa.nome} - data de abertura: <fmt:formatDate value="${empresa.dataAbertura}" pattern="dd/MM/yyyy"/></li>
+        <li>${empresa.nome} - data de abertura: <fmt:formatDate value="${empresa.dataAbertura}"
+                                                                pattern="dd/MM/yyyy"/></li>
     </c:forEach>
 </ul>
 <br>
