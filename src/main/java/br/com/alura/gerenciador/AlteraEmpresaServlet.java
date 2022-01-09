@@ -30,7 +30,7 @@ public class AlteraEmpresaServlet extends HttpServlet {
             dataAberturaFormatada = dateFormat.parse(paramDataCadastro);
         } catch (ParseException e) {
             throw new ServletException(e);
-       }
+        }
 
         DBMemoria dbMemoria = new DBMemoria();
         Empresa empresa = dbMemoria.buscarEmpresaPorId(empresaID);
@@ -38,7 +38,5 @@ public class AlteraEmpresaServlet extends HttpServlet {
         empresa.setDataAbertura(dataAberturaFormatada);
 
         response.sendRedirect("listaEmpresas");
-
-
     }
 }
