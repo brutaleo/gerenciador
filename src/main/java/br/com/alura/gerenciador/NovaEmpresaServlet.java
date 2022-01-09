@@ -36,6 +36,7 @@ public class NovaEmpresaServlet extends HttpServlet {
         dbMemoria.adiciona(empresa);
 
         request.setAttribute("empresa", empresa.getNome());
+        
         response.sendRedirect("listaEmpresas");
 
 
