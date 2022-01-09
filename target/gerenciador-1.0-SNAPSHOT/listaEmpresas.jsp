@@ -9,6 +9,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <c:url value="/removeEmpresa" var="linkServeletRemoveEmpresa"/>
+<c:url value="/mostraEmpresa" var="linkServeletMostaEmpresa"/>
 
 <html>
 <head>
@@ -25,6 +26,7 @@
     <c:forEach items="${empresas}" var="empresa">
         <li>${empresa.nome} - data de abertura: <fmt:formatDate value="${empresa.dataAbertura}"
                                                                 pattern="dd/MM/yyyy"/>
+            <a href="${linkServeletMostaEmpresa}?id=${empresa.id}">editar</a>
             <a href="${linkServeletRemoveEmpresa}?id=${empresa.id}">remover</a>
         </li>
     </c:forEach>

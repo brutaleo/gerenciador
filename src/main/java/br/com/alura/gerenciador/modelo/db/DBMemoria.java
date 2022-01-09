@@ -48,5 +48,15 @@ public class DBMemoria {
     public void removeEmpresaUtilizandoRemoveIf(Long id) {
         lista.removeIf(empresa -> Objects.equals(empresa.getId(), id));
     }
+
+    public Empresa buscarEmpresaPorId(Long id) {
+
+        for (Empresa empresa: lista) {
+            if (empresa.getId() == id) {
+                return empresa;
+            }
+        }
+        return null;
+    }
 }
 
