@@ -39,8 +39,6 @@ public class NovaEmpresaServlet extends HttpServlet {
         
         response.sendRedirect("listaEmpresas");
 
-
-
     }
 
 }
