@@ -8,6 +8,15 @@
 <h1><%= "Curso no Intellij porque sim!!" %>
 </h1>
 <br/>
-<a href="oi">Está vivo?</a>
+<a href="oi">Está vivo? (Annotation)</a>
+<br>
+<a href="ola">Está vivo? (web.xml)</a>
+<br>
+<a href="novaempresa">Cadastro de Empresa via parâmetro URL (Deprecated)</a>
+<br>
+<a href="formNovaEmpresa.jsp">Cadastro de Empresa via Formulário</a>
+<br>
+<a href="listaEmpresas">Listar Empresas salvas em memória</a>
+
 </body>
 </html>
