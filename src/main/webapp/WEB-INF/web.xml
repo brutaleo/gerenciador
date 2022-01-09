@@ -15,5 +15,5 @@
         <servlet-name>hello</servlet-name>
         <url-pattern>/ola</url-pattern>
     </servlet-mapping>
-    
+
 </web-app>
